@@ -1,0 +1,27 @@
+﻿
+@model RaviCurdApp.Models.Studentdatils
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <div class="form-group">
+        <label>Name</label>
+        @Html.TextBoxFor(n => n.SNAME)
+    </div>
+    <div class="form-group">
+        <label>Fee</label>
+        @Html.TextBoxFor(f => f.ROLL)
+    </div>
+
+    <div class="form-group">
+        <label>Roll</label>
+        @Html.TextBoxFor(R => R.ROLL)
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+
+}
